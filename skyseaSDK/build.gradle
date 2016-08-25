@@ -1,0 +1,29 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 17
+    buildToolsVersion "24.0.1"
+
+    defaultConfig {
+        applicationId "com.skysea.sdk"
+        minSdkVersion 9
+        targetSdkVersion 17
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+dependencies {
+    compile project(':skysea_lib')
+    compile 'com.android.support:support-v4:18.0.0'
+    compile files('libs/alipaySdk-20160812.jar')
+    compile 'com.google.android.gms:play-services-appindexing:8.1.0'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.zhy:okhttputils:2.3.8'
+    compile 'com.google.code.gson:gson:2.3.1'
+}

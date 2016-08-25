@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="amount">
+        <item>0元</item>
+        <item >10元</item>
+        <item >20元</item>
+        <item >50元</item>
+        <item >100元</item>
+        <item >200元</item>
+        <item >300元</item>
+        <item >500元</item>
+        <item >800元</item>
+        <item >1000元</item>
+        <item >2000元</item>
+        <item >5000元</item>
+        <item >10000元</item>
+        <item >20000元</item>
+        <item >50000元</item>
+    </string-array>
+    
+    <!-- item 支付宝_1 :  value_id -->
+    <string-array name="pre_paid">
+        <item>支付宝_21</item>
+    </string-array>
+</resources>

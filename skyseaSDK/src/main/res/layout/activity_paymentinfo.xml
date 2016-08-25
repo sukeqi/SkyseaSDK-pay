@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/modeofpayment_bg"
+        android:baselineAligned="false"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/login_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="40dip"
+            android:background="@drawable/navi_title"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:text="@string/modeofpayment_title"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btn_recharge_back"
+                android:layout_width="50dip"
+                android:layout_height="30dip"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dip"
+                android:background="@drawable/navi_back_bg"
+                android:gravity="right|center_vertical"
+                android:paddingRight="4dip"
+                android:text="@string/modeofpayment_back"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:id="@+id/btn_recharge_next"
+                android:layout_width="50dip"
+                android:layout_height="30dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="5dip"
+                android:background="@drawable/navi_goforward_bg"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="4dip"
+                android:text="@string/modeofpayment_next"
+                android:textColor="#ffffff" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/l_login_logo"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="0.2"
+            android:gravity="center_vertical|center_horizontal">
+
+            <ImageView
+                android:id="@+id/login_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/logo"
+                android:contentDescription="@string/login_logo" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/payment_Info"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="0.8"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dip"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/modeofpayment_select_sum" />
+
+                <Spinner
+                    android:id="@+id/select_payment_amount"
+                    android:layout_width="180dip"
+                    android:layout_height="wrap_content"
+                    android:prompt="@string/spinner_amount_prompt" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/modeofpayment_other" />
+
+                <EditText
+                    android:id="@+id/txt_other_acount"
+                    android:layout_width="180dip"
+                    android:layout_height="30dip"
+                    android:background="@drawable/edittext_bg"
+                    android:hint="@string/modeofpayment_default"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:textColorHint="#CCCCCC"></EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/modeofpayment_way" />
+
+                <Spinner
+                    android:id="@+id/select_payment_way"
+                    android:layout_width="180dip"
+                    android:layout_height="wrap_content"
+                    android:prompt="@string/spinner_payment_prompt" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_footer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0"
+            android:text="@string/login_footer"
+            android:textColor="#afafaf" />
+    </LinearLayout>
+
+</ScrollView>

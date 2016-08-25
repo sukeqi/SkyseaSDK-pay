@@ -1,0 +1,6 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <integer name="register_info_ll">7</integer>
+    <integer name="register_info_bottom">7</integer>
+
+</resources>
